@@ -1,0 +1,18 @@
+﻿using Entity_Framework_Demo;
+using System.Configuration;
+using System.Data.Entity;
+
+namespace DataModel
+{
+    public class NinjaContext : DbContext
+    {
+        public NinjaContext() : base("name=Ninja")
+        {
+            
+        }
+
+        public DbSet<Ninja> Ninjas { get; set; }
+        public DbSet<Clan> Clans { get; set; }
+        public DbSet<NinjaEquipment> Equipments { get; set; }
+    }
+}

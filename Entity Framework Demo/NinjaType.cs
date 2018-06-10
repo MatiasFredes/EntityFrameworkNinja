@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entity_Framework_Demo
 {
-    public class Class1
+   public enum NinjaType
     {
+        Shinobi = 1,
+        Kunouchi = 2
     }
 }
